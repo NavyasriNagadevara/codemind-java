@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Even
+class Yash
 {
     public static void main(String args[])
     {
