@@ -10,27 +10,20 @@ class Java
         {
             int n,d,rev=0,temp;
             n=sc.nextInt();
-            if(n<0)
+            temp=n;
+            while(n!=0)
             {
-                System.out.println("False");
+                d=n%10;
+                rev=rev*10+d;
+                n/=10;
+            }
+            if(rev==temp)
+            {
+                System.out.println("True");
             }
             else
             {
-                temp=n;
-                while(n!=0)
-                {
-                    d=n%10;
-                    rev=rev*10+d;
-                    n=n/10;
-                }
-                if(rev==temp)
-                {
-                    System.out.println("True");
-                }
-                else
-                {
-                    System.out.println("False");
-                }
+                System.out.println("False");
             }
         }
     }
